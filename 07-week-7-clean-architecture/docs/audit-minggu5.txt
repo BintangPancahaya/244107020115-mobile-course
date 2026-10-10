@@ -1,0 +1,11 @@
+# Audit Praktikum 1 pada project Minggu 5 (sebelum refactor)
+## 1. Widget menyentuh jaringan/database langsung (lib/pages lib/widgets)
+  (0 hasil)
+## 2. Logika bisnis di build() (lib/pages lib/widgets)
+  (0 hasil)
+## 3. Instansiasi manual / DI bocor (lib/pages)
+  ..\05-week-5-local-storage-offline-first\week5_offline_notes\lib\pages\settings_page.dart:7: final prefsRepositoryProvider = Provider((ref) => PrefsRepository());
+## 4. Kontrak + implementasi tercampur (lib/data)
+  ..\05-week-5-local-storage-offline-first\week5_offline_notes\lib\data\prefs.dart:3: class PrefsRepository {
+  ..\05-week-5-local-storage-offline-first\week5_offline_notes\lib\data\sync.dart:50: class PostCache {
+  ..\05-week-5-local-storage-offline-first\week5_offline_notes\lib\data\repositories\note_repository.dart:6: class NoteRepository {

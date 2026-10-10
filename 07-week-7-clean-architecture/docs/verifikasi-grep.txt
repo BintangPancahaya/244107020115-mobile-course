@@ -1,0 +1,13 @@
+# Verifikasi dependency rule (setelah refactor) - 2026-10-22 03:00
+## 1. Presentation steril dari data mentah (harus NOL hasil)
+pola: Dio\(|openDatabase|getDatabasesPath|FlutterSecureStorage|SharedPreferences\.getInstance|jsonDecode
+  (0 hasil)
+## 2. Domain & core steril dari framework/package (harus NOL hasil)
+pola: import 'package:flutter|import 'package:dio|import 'package:sqflite|import 'package:firebase
+  (0 hasil)
+## 3a. Widget/page tidak menginstansiasi repository (harus NOL hasil)
+  (0 hasil)
+## 3b. flutter analyze
+No issues found! (ran in 3.0s)
+## 3c. flutter test
+00:01 +11: All tests passed!
